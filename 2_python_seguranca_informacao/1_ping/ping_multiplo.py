@@ -8,6 +8,6 @@ with open('hosts.txt') as file:
     for ip in dump:
         print('Verificando o ip: ', ip)
         print("-" * 60)
-        os.system('ping -n 2 {}'.format(ip))
+        os.system('1_ping -n 2 {}'.format(ip))
         print("-" * 60)
         time.sleep(5)
